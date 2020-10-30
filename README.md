@@ -13,7 +13,7 @@ The objective of this project: To pridect which water pumps are functional, whic
 
 ![foliummap](image/foliummap.png)
 ![foliummap2](image/foliummap2.png)
-[See interactive folium map ](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)
+# [See interactive folium map ](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)
 ![basemap](image/func.PNG)
 
 

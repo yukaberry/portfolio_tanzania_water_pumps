@@ -192,7 +192,7 @@ correlation wiht status_group_non_functional
 ![foliummap2](/image/foliummap2.png)
 [Here to jump to the interactive map]()
 
-## Pumps& locations by Basemap 
+## Pumps & locations by Basemap 
 ![func](/image/func.PNG)
 ![need_repair](/image/need_repair.PNG)
 ![non_func](/image/non_func.PNG)
@@ -274,9 +274,9 @@ In this competition, **5600 competitors** joined and the best public score (30 O
 * Randomised and Grid serach took a while to compute optimal parameters due to the size of the dataset.
 * Label 1 (needs repair) is extremely small percentage (0.07%). Even after increasing samples by SMOTE, the final model's weakness is detecting this class although it improved a lot comapared to a result without SMOTE. I will continue to look for a solution to improve. 
 * I have done wrong process of Upsampling + Kfold Cross Validation on my train sets which returned extremely high results at first attempt. I have realised that some parts of upsampled X and y train datasets were copied of X and y train, theredore, this ended up overfitting by memorizing its training set. This was why cross validation scores were much higher than non upsampled train datasets' socres. Right steps are :
- - 1. Oversample the minority class
- - 2. Train the classifier on the training folds
- - 3. Validate the classifier on the remaining fold
+    - 1. Oversample the minority class
+    - 2. Train the classifier on the training folds
+    - 3. Validate the classifier on the remaining fold
 
 
 * I would like to create more new features using missing features which are *not missing at random*. 
