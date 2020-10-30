@@ -27,7 +27,7 @@ Predictor variables : 42
 Labels : multi labels (functional, non functional, needs repair)
 
 Created and recorded : between Oct 2002 and Dec 2012
-![date_time](image/date_time.PNG)
+![date_time](/image/date_time.PNG)
 
 Feature varibale details: continuous, discrete and categorical varibles
 
@@ -97,13 +97,13 @@ Feature varibale details: continuous, discrete and categorical varibles
 
 ## Imbalanced dataset and resampling
 
-![data_balance2](image/data_balance2.PNG)
-![data_balance](image/data_balance.PNG)
+![data_balance2](/image/data_balance2.PNG)
+![data_balance](/image/data_balance.PNG)
 
 After resampling, the dataset looks as below. Resampling techniques are applied to **only train data** after being splited.
 
-![data_balance4](image/data_balance4.PNG)
-![data_balance3](image/data_balance3.PNG)
+![data_balance4](/image/data_balance4.PNG)
+![data_balance3](/image/data_balance3.PNG)
 
 
 ## Are values missing at random or not? 
@@ -113,11 +113,11 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 * GPS height and population 
 * installer and funder 
 
-![missing_data](image/missing_heatmap.PNG) 
+![missing_data](/image/missing_heatmap.PNG) 
 
-![missing_data](image/missing_dendrogram.PNG)
+![missing_data](/image/missing_dendrogram.PNG)
 
-![missing_data](image/missing_matrix.PNG)
+![missing_data](/image/missing_matrix.PNG)
 
 
 
@@ -125,31 +125,31 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 * Pwani, Singida,Arusha (Zero)
 * Kigoma, Rukwa (Nearly Zero)
 
-![pop_zero](image/population_zero.PNG)
+![pop_zero](/image/population_zero.PNG)
 
 ## Population zero and construction year correlation 
 * "if popularion is zero, construction year will be unknown 
 
-![pop_year](image/population_year.PNG)
+![pop_year](/image/population_year.PNG)
 
 
 ## Dry water pumps could cause "non functional "
 
-![dry_water](image/dry_water.PNG)
+![dry_water](/image/dry_water.PNG)
 
 ## Water quality
 
 * Most of the water quality is soft (good)
 * water_quality : Unknow and salty seems to be good predictors
 
-![water_quality](image/water_quality.PNG)
+![water_quality](/image/water_quality.PNG)
 
 
 ## Payment status
 
 * non functional have more "NeverPay"
 
-![payment_status](image/payment_status.PNG)
+![payment_status](/image/payment_status.PNG)
 
 
 
@@ -157,33 +157,33 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 
 * DWE contributes to installing and funding the pumps the most. 
 
-![installer](image/installer.PNG)
+![installer](/image/installer.PNG)
 
-![funder](image/funder.PNG)
+![funder](/image/funder.PNG)
 
 ## Pump type: non func group has majority of "other"
 
 
-![pump_type](image/pump_type.PNG)
+![pump_type](/image/pump_type.PNG)
 
 
 ## Shallow well and Machine dbh has "unknown", "Salty water" and "milky" 
 
-![pump_type](image/water_source.PNG)
+![pump_type](/image/water_source.PNG)
 
 ## Correlation  
 
 correlation with status_group_functional
-![corr_func](image/corr_with_func.PNG)
+![corr_func](/image/corr_with_func.PNG)
 
 correlation wihth status_group_functional_needs_repair
 
-![corr_nonfunc](image/corr_with_nonfunc.PNG)
+![corr_nonfunc](/image/corr_with_nonfunc.PNG)
 
 
 correlation wiht status_group_non_functional
 
-![corr_repair](image/corr_with_repair.PNG)
+![corr_repair](/image/corr_with_repair.PNG)
 
 
 ## Folium interactive map
@@ -191,9 +191,9 @@ correlation wiht status_group_non_functional
 [Here to jump to the interactive map]()
 
 ## Pumps& locations by Basemap 
-![func](image/func.PNG)
-![need_repair](image/need_repair.PNG)
-![non_func](image/non_func.PNG)
+![func](/image/func.PNG)
+![need_repair](/image/need_repair.PNG)
+![non_func](/image/non_func.PNG)
 
 
 
@@ -217,8 +217,8 @@ correlation wiht status_group_non_functional
 ## 6.1 Comparason of 4 Baseline Models's evaluation 
 
 **Datasets without upsampling**
-![baseline_model_scores](image/baseline_model_scores.PNG)
-![baseline_model_scores_x_val](image/baseline_model_scores.PNG)
+![baseline_model_scores](/image/baseline_model_scores.PNG)
+![baseline_model_scores_x_val](/image/baseline_model_scores.PNG)
 
 Due to big enough data, I suppose there is not much difference between split-train-test validation and 5 fold cross validation methods. 
 
@@ -230,10 +230,10 @@ Due to big enough data, I suppose there is not much difference between split-tra
 ## 6.2  Classification report
 
 **Classification report XGB Baseline without upsampled train data**
-![classification report baseline xgb without upsampling](image/classification_report_xgb.PNG)
+![classification report baseline xgb without upsampling](/image/classification_report_xgb.PNG)
 
 **Classification report Turned XGB model trained by upsampled data**
-![Classification report Turned XGB model with upsampled train data](image/)
+![Classification report Turned XGB model with upsampled train data](/image/)
 # !!!!!!!!!! Turned version is not higher score than baseline. DO randomise search instead of grid search !!!!!!!!!!!!!!!
 
 
@@ -241,19 +241,19 @@ Due to big enough data, I suppose there is not much difference between split-tra
 ## 6.3 Confusion matrix
 
 **Turned XGB with resampled**
-![xgb confusion matrix](image/confusion_matrix_xgb.PNG)
+![xgb confusion matrix](/image/confusion_matrix_xgb.PNG)
 
 ## 6.4 AUC and ROC chart 
 
 **Turned XGB with resampled**
-![roc_auc_chartxgb](image/auc_roc_chart_xgb.PNG)
+![roc_auc_chartxgb](/image/auc_roc_chart_xgb.PNG)
 
 
 
 ## 6.5 The competition ranking
 
 [Website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)**5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294**. **My private score is 0.87.**
-![competition](image/competition.PNG)
+![competition](/image/competition.PNG)
 
 
 
