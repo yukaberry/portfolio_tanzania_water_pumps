@@ -217,7 +217,10 @@ correlation wiht status_group_non_functional
 ## 6.1 Comparason of 4 Baseline Models's evaluation 
 
 **Datasets without upsampling**
+
 ![baseline_model_scores](/image/baseline_model_scores.PNG)
+
+
 ![baseline_model_scores_x_val](/image/baseline_model_scores.PNG)
 
 Due to big enough data, I suppose there is not much difference between split-train-test validation and 5 fold cross validation methods. 
@@ -230,9 +233,12 @@ Due to big enough data, I suppose there is not much difference between split-tra
 ## 6.2  Classification report
 
 **Classification report XGB Baseline without upsampled train data**
+
 ![classification report baseline xgb without upsampling](/image/classification_report_xgb.PNG)
 
 **Classification report Turned XGB model trained by upsampled data**
+
+
 ![Classification report Turned XGB model with upsampled train data](/image/)
 # !!!!!!!!!! Turned version is not higher score than baseline. DO randomise search instead of grid search !!!!!!!!!!!!!!!
 
@@ -241,19 +247,22 @@ Due to big enough data, I suppose there is not much difference between split-tra
 ## 6.3 Confusion matrix
 
 **Turned XGB with resampled**
+
 ![xgb confusion matrix](/image/confusion_matrix_xgb.PNG)
 
 ## 6.4 AUC and ROC chart 
 
 **Turned XGB with resampled**
+
 ![roc_auc_chartxgb](/image/auc_roc_chart_xgb.PNG)
 
 
 
-## 6.5 The competition ranking
+## 6.5 The competition and scores
 
-[Website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)**5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294**. **My private score is 0.87.**
-![competition](/image/competition.PNG)
+DrivenData works on projects at the intersection of data science and social impact, in areas like international development, health, education, research and conservation, and public services. 
+In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294**. **My private score is 0.87.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
+![competition](/image/competition.png)
 
 
 
