@@ -188,6 +188,8 @@ correlation wiht status_group_non_functional
 
 ## Folium interactive map
 
+![foliummap](/image/foliummap.png)
+![foliummap2](/image/foliummap2.png)
 [Here to jump to the interactive map]()
 
 ## Pumps& locations by Basemap 
@@ -221,7 +223,7 @@ correlation wiht status_group_non_functional
 ![baseline_model_scores](/image/baseline_model_scores.PNG)
 
 
-![baseline_model_scores_x_val](/image/baseline_model_scores.PNG)
+![baseline_model_scores_x_val](/image/baseline_model_scores_x_val.PNG)
 
 Due to big enough data, I suppose there is not much difference between split-train-test validation and 5 fold cross validation methods. 
 
