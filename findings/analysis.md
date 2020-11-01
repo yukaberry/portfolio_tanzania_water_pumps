@@ -190,7 +190,8 @@ correlation wiht status_group_non_functional
 
 ![foliummap](/image/foliummap.png)
 ![foliummap2](/image/foliummap2.png)
-[Here to jump to the interactive map](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)
+## [Here to jump to the interactive map](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)**
+
 
 ## Pumps & locations by Basemap 
 ![func](/image/func.PNG)
