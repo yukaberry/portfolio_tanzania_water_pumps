@@ -11,9 +11,10 @@ The objective of this project: To pridect which water pumps are functional, whic
 6. Modeling and evaluation
 7. Challenges and augmentations
 
+## [Here to see interactive folium map ](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)
+
 ![foliummap](image/foliummap.png)
 ![foliummap2](image/foliummap2.png)
-## [Here to see interactive folium map ](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)
 ![basemap](image/func.PNG)
 
 
@@ -42,7 +43,7 @@ Interested in processing **geospatial data** and taking my understandings to a n
   - [modeling.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/utils/modeling_utils.py)
 * [requirements.txt](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/requirements.txt) Software Requirements
 
-* [folium_map_layercontrol.ipynb](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb) **Interactive water pumps' maps of Tanzania** in python notebook by using folium and geospatial data.
+* [folium_map_layercontrol.ipynb](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb) **Interactive water pumps' maps of Tanzania** in python notebook by using folium and geospatial data.
 * [basemap.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/basemap.py) Maps plotted by basemap
 * [data_visualisation.ipynb](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/data_visualisation.ipynb) Data visualisation codes and images in python notebook
 * [cleaning_data.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/cleaning_data.py) Data cleaning and feature engneering.
