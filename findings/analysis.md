@@ -187,7 +187,7 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 
 
 ## Folium interactive map
-## See interactive map [https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
+[https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
 ![foliummap](/image/foliummap.png)
 ![foliummap2](/image/foliummap2.png)
 
@@ -229,25 +229,38 @@ I have tried two different evaluation methods. Here it shows that the results ar
 ![baseline_model_scores_x_val](/image/baseline_model_scores_x_val.PNG)
 
 
-**Upsampled Datasets, 5 fold cross validation, turned hyperparameters**
+**Upsampled Datasets, holdout method (8:2) validation**
+* SVC model's F1_macro has improved by 6 % and also keep the good accuracy. However, resampled technique is not so effective to other models.
 
-![upsampled_x_val_turned](/image/)
+![baseline_model_scores_resampled](/image/baseline_model_scores_resampled.PNG)
 
 
 
 ## 6.2  Classification report
-I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. I am familiar with Random Forest Classifier from my other projects. Here it shows the details of XGB performance and it is turned by grid search. 
+I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. Here it shows the details of XGB performance and it is turned by grid search. 
 
 
 **Classification report XGB Baseline without upsampled train data**
 
 ![classification report baseline xgb without upsampling](/image/classification_report_xgb.PNG)
 
-**Classification report Turned XGB model trained by upsampled data**
 
+
+**Classification report XGB Baseline trained by upsampled train datasets**
+
+![Classification report XGB Baseline trained by upsampled train datasets](/image/Classification report XGB Baseline trained by upsampled train datasets.PNG)
+
+
+**Classification report turned XGB model without upsampled train data**
 
 ![Classification report Turned XGB model with upsampled train data](/image/)
-# !!!!!!!!!! Turned version is not higher score than baseline. DO randomise search instead of grid search !!!!!!!!!!!!!!!
+
+
+
+**Classification report Turned XGB model trained by upsampled data**
+
+![Classification report Turned XGB model with upsampled train data](/image/)
+
 
 
 
