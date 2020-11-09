@@ -11,7 +11,7 @@ The objective of this project: To pridect which water pumps are functional, whic
 6. Modeling and evaluation
 7. Challenges and augmentations
 
-## [Here to see interactive folium map ](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)
+## See interactive map [https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
 
 ![foliummap](image/foliummap.png)
 ![foliummap2](image/foliummap2.png)

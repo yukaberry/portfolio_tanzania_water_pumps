@@ -20,41 +20,41 @@ XGB =XGBClassifier()
 pprint(XGB.get_params())
 
 
-# """""""Randomised Search""""""" 
-# # Use the random grid to search for best hyperparameters
+"""""""Randomised Search""""""" 
+# Use the random grid to search for best hyperparameters
 
 
-# # Number of trees
-# n_estimator = [int(x) for x in np.linspace(start = 100, stop =500, num = 5)]
+# Number of trees
+n_estimator = [int(x) for x in np.linspace(start = 100, stop =500, num = 5)]
 
-# # booster types
-# booster = ['gbtree']
+# booster types
+booster = ['gbtree']
 
-# # Maximum number of levels in tree
-# max_dep = [int(x) for x in np.linspace(4, 16, num = 6)]
-# max_dep.append(None)
+# Maximum number of levels in tree
+max_dep = [int(x) for x in np.linspace(4, 16, num = 6)]
+max_dep.append(None)
 
-# # When set to True, XGBoost will perform validation of input parameters to check whether a parameter is used or not.
-# validate_parameter = [True, False]
+# When set to True, XGBoost will perform validation of input parameters to check whether a parameter is used or not.
+validate_parameter = [True, False]
 
-# # the minimum weight (or number of samples if all samples have a weight of 1) required in order to create a new node in the tree.
-# #Smaller weight, smaller samples. If too big, will result in overfitiing
-# min_child_wei = [int(x) for x in np.linspace(1, 5, num = 5)]
-# min_child_wei.append(None)
+# the minimum weight (or number of samples if all samples have a weight of 1) required in order to create a new node in the tree.
+#Smaller weight, smaller samples. If too big, will result in overfitiing
+min_child_wei = [int(x) for x in np.linspace(1, 5, num = 5)]
+min_child_wei.append(None)
 
-# # learning_rate (eta) range: [0,1], default=0.3, prevents overfitting
-# eta = [0.2,0.3,0.4]
+# learning_rate (eta) range: [0,1], default=0.3, prevents overfitting
+eta = [0.2,0.3,0.4]
 
-# # Method of selecting samples for training each tree
-# bootstp = [True]
+# Method of selecting samples for training each tree
+bootstp = [True]
 
-# random_grid = {'n_estimators': n_estimator,
-#                'booster':booster,
-#                'max_depth': max_dep,
-#                'validate_parameters': validate_parameter,
-#                'min_child_weight': min_child_wei,
-#                'learning_rate':eta,
-#                'bootstrap': bootstp}
+random_grid = {'n_estimators': n_estimator,
+               'booster':booster,
+               'max_depth': max_dep,
+               'validate_parameters': validate_parameter,
+               'min_child_weight': min_child_wei,
+               'learning_rate':eta,
+               'bootstrap': bootstp}
 
 
 random_grid = {'n_estimators': [100,200,300],

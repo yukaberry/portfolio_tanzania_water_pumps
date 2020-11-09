@@ -128,7 +128,9 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 ![pop_zero](/image/population_zero.PNG)
 
 ## Population zero and construction year correlation 
-* "if popularion is zero, construction year will be unknown 
+* Label 0 : Non population zero
+* Label 1 : Population zero 
+* "Popularion is zero" could indicate that it can be a missing value and corelated to "construction year unknown" value. However, it is difficult to determine if this is a missing value or a case that no one lives in the certain areas. 
 
 ![pop_year](/image/population_year.PNG)
 
@@ -146,8 +148,6 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 
 
 ## Payment status
-
-* non functional have more "NeverPay"
 
 ![payment_status](/image/payment_status.PNG)
 
@@ -167,30 +167,30 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 ![pump_type](/image/pump_type.PNG)
 
 
-## Shallow well and Machine dbh has "unknown", "Salty water" and "milky" 
+## The source of the water : "Unknown", "Salty water" and "Milky" in  Shallow well and Machine dbh
 
 ![pump_type](/image/water_source.PNG)
 
-## Correlation  
+## Correlation : Labels and features  
 
-correlation with status_group_functional
+**correlation with status_group_functional**
 ![corr_func](/image/corr_with_func.PNG)
 
-correlation wihth status_group_functional_needs_repair
+**correlation wihth status_group_functional_needs_repair**
 
 ![corr_nonfunc](/image/corr_with_nonfunc.PNG)
 
 
-correlation wiht status_group_non_functional
+**correlation wiht status_group_non_functional**
 
 ![corr_repair](/image/corr_with_repair.PNG)
 
 
 ## Folium interactive map
-
+## See interactive map [https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
 ![foliummap](/image/foliummap.png)
 ![foliummap2](/image/foliummap2.png)
-## [Here to jump to the interactive map](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb)**
+
 
 
 ## Pumps & locations by Basemap 
@@ -203,37 +203,41 @@ correlation wiht status_group_non_functional
 # 5. Feature engneering
 
 **New features**
-* population_zero : caegorised if population is  zero or not zero
-* payment_status : categorised if payment status is paid, not paid or unknown
+* population_zero :Categorised : population is  zero or not zero
+* payment_status : Categorised : payment status is paid, not paid or unknown
 * construction_year_new : Sort years by decades
 * installer_group : Keep top 10 of installer
 * funder_group :  Keep top 10 of funder
 
 **Missing data**
-* longitude : missing value filled with median
-* gps_height : missing value filled with median
+* longitude : Missing value filled with median
+* gps_height : Missing value filled with median
 
 
 
 # 6. Modeling and Evaluation
 
 ## 6.1 Comparason of 4 Baseline Models's evaluation 
+I have tried two different evaluation methods. Here it shows that the results are similar, I suppose it is becuase of the data size. 
 
-**Datasets without upsampling**
+**Datasets (without upsampling), holdout method (8:2) validation**
 
 ![baseline_model_scores](/image/baseline_model_scores.PNG)
 
+**Datasets (without upsampling), 5 folds cross validation**
 
 ![baseline_model_scores_x_val](/image/baseline_model_scores_x_val.PNG)
 
-Due to big enough data, I suppose there is not much difference between split-train-test validation and 5 fold cross validation methods. 
 
-**Datasets with upsampling**
+**Upsampled Datasets, 5 fold cross validation, turned hyperparameters**
 
-# !!!! Add score table df once it is done. Only split train test data since there is no difference betwwen cross val and train test split methods
+![upsampled_x_val_turned](/image/)
+
 
 
 ## 6.2  Classification report
+I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. I am familiar with Random Forest Classifier from my other projects. Here it shows the details of XGB performance and it is turned by grid search. 
+
 
 **Classification report XGB Baseline without upsampled train data**
 
@@ -272,7 +276,7 @@ In this competition, **5600 competitors** joined and the best public score (30 O
 # 8. Challenges and augmentations
 
 * Many features(42), multi labels(3) and different kinds of data types(categorical, discrete, continous variables) makes this project difficult to resolve.
-* Randomised and Grid serach took a while to compute optimal parameters due to the size of the dataset.
+* Randomised and Grid serach took a while to compute optimal parameters due to the size of the dataset. I used Colab to generate the results faster than my local environment.
 * Label 1 (needs repair) is extremely small percentage (0.07%). Even after increasing samples by SMOTE, the final model's weakness is detecting this class although it improved a lot comapared to a result without SMOTE. I will continue to look for a solution to improve. 
 * I have done wrong process of Upsampling + Kfold Cross Validation on my train sets which returned extremely high results at first attempt. I have realised that some parts of upsampled X and y train datasets were copied of X and y train, theredore, this ended up overfitting by memorizing its training set. This was why cross validation scores were much higher than non upsampled train datasets' socres. Right steps are :
     - step 1 Oversample the minority class
@@ -280,8 +284,9 @@ In this competition, **5600 competitors** joined and the best public score (30 O
     - step 3 Validate the classifier on the remaining fold
 
 
-* I would like to create more new features using missing features which are *not missing at random*. 
+* I will continue to work on this project and would like to create more new features using missing features which are *not missing at random*. 
 * Train data's features I used and created were not suitable for joining the competition because I used train label information while processing and creating new features. My next step by using this dataset is to create a model which can classify "test-only" test dataset and join a competion. 
+
 
 
 
