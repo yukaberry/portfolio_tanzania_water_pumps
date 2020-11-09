@@ -240,7 +240,7 @@ I have tried two different evaluation methods. Here it shows that the results ar
 I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. Here it shows the details of XGB performance and it is turned by grid search. 
 
 
-### XGB Baseline without upsampled data
+### XGB Baseline trained by non upsampled data
 
 ![classification report baseline xgb without upsampling](/image/classification_report_xgb.PNG)
 
@@ -264,8 +264,7 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 
 
-### Turned XGB model without upsampled train data
-
+### Turned XGB trained by non resampled dataset
 ![Classification_report_Turned_XGB_model_with_upsampled_traindata](/image/Classification_report_Turned_XGB_model_without_upsampled_traindata.PNG)
 
 
@@ -281,7 +280,7 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 ![xgb confusion matrix](/image/confusion_matrix_turned_xgb_with_resampled.PNG)
 
 
-**Turned XGB model, no upsampled trainset**
+**Turned XGB trained by non resampled dataset**
 
 ![xgb confusion matrix](/image/confusion_matrix_turned_xgb_without_resampled.PNG)
 
@@ -289,15 +288,21 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 
 
-## 6.4 AUC and ROC chart 
+## 6.4 AUC(area under curve) and ROC(receiver operating curve)chart 
+
 
 **Turned XGB trained by non resampled dataset**
 
 ![roc_auc_chartxgb](/image/auc_roc_chart_xgb.PNG)
+All of 3 classes has more than 95% auc rates. This model’s predictive ability in discriminating between classes is good.
+
+## 6.5 Summary of XGB model's evaluation
+
+Overall, as you see above evaluation results of XGB model, it is reliable and stable to predict pumps categories.F1 has improved by 2% after resampling dataset and tuning a model.
+However, it shows that there is still some room to be improved especially in "Nedd repair"'s recall score. This class is only about 7 % of the whole dataset, which made the model difficult to learn even after upsampling.
 
 
-
-## 6.5 The competition and scores
+## 6.6 The competition and scores
 
 DrivenData works on projects at the intersection of data science and social impact, in areas like international development, health, education, research and conservation, and public services. 
 In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294.My private score of accuracy is 0.88.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
