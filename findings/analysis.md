@@ -276,13 +276,22 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 ## 6.3 Confusion matrix
 
-**Turned XGB with resampled**
+**Turned XGB model trained by upsampled data**
 
-![xgb confusion matrix](/image/confusion_matrix_xgb.PNG)
+![xgb confusion matrix](/image/confusion_matrix_turned_xgb_with_resampled.PNG)
+
+
+**Turned XGB model, no upsampled trainset**
+
+![xgb confusion matrix](/image/confusion_matrix_turned_xgb_without_resampled.PNG)
+
+
+
+
 
 ## 6.4 AUC and ROC chart 
 
-**Turned XGB with resampled**
+**Turned XGB trained by non resampled dataset**
 
 ![roc_auc_chartxgb](/image/auc_roc_chart_xgb.PNG)
 
@@ -291,7 +300,7 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 ## 6.5 The competition and scores
 
 DrivenData works on projects at the intersection of data science and social impact, in areas like international development, health, education, research and conservation, and public services. 
-In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294**. **My private score is 0.87.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
+In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294.My private score of accuracy is 0.88.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
 ![competition](/image/competition.png)
 
 
