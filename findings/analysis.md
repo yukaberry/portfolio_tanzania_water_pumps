@@ -275,12 +275,12 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 ## 6.3 Confusion matrix
 
-**Turned XGB model trained by upsampled data**
+### Turned XGB model trained by upsampled data
 
 ![xgb confusion matrix](/image/confusion_matrix_turned_xgb_with_resampled.PNG)
 
 
-**Turned XGB trained by non resampled dataset**
+### Turned XGB trained by non resampled dataset
 
 ![xgb confusion matrix](/image/confusion_matrix_turned_xgb_without_resampled.PNG)
 
@@ -289,12 +289,13 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 
 ## 6.4 AUC(area under curve) and ROC(receiver operating curve)chart 
+All of 3 classes has more than 95% auc rates. This model’s predictive ability in discriminating between classes is good.
 
 
-**Turned XGB trained by non resampled dataset**
+### Turned XGB trained by non resampled dataset
 
 ![roc_auc_chartxgb](/image/auc_roc_chart_xgb.PNG)
-All of 3 classes has more than 95% auc rates. This model’s predictive ability in discriminating between classes is good.
+
 
 ## 6.5 Summary of XGB model's evaluation
 
