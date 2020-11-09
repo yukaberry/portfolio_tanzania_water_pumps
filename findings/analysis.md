@@ -83,8 +83,8 @@ Feature varibale details: continuous, discrete and categorical varibles
 6. Inaccurate placement of groundwater extraction boreholes.
 7. The shortage of skilled labor for placement and maintenance.
 
-[reference](https://www1.agric.gov.ab.ca/$department/deptdocs.nsf/ba3468a2a8681f69872569d60073fde1/b235a3f65b62081b87256a5a005f5446/$FILE/WaterWells_module7.pdf)
-[reference](http://www.rapidservicellc.com/manchester-plumbing/18-plumbing/1633-5-causes-of-well-pump-failure.html)
+[Reference link1](https://www1.agric.gov.ab.ca/$department/deptdocs.nsf/ba3468a2a8681f69872569d60073fde1/b235a3f65b62081b87256a5a005f5446/$FILE/WaterWells_module7.pdf)
+[Reference link2](http://www.rapidservicellc.com/manchester-plumbing/18-plumbing/1633-5-causes-of-well-pump-failure.html)
 
 
 # 4. Exploring and cleaning data
@@ -230,7 +230,7 @@ I have tried two different evaluation methods. Here it shows that the results ar
 
 
 **Upsampled Datasets, holdout method (8:2) validation**
-* SVC model's F1_macro has improved by 6 % and also keep the good accuracy. However, resampled technique is not so effective to other models.
+* SVC model's F1_macro has improved by 6 % and also keep the good accuracy. However, resampled technique is not so effective in other models.
 
 ![baseline_model_scores_resampled](/image/baseline_model_scores_resampled.PNG)
 
@@ -248,7 +248,7 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 **Classification report XGB Baseline trained by upsampled train datasets**
 
-![Classification report XGB Baseline trained by upsampled train datasets](/image/Classification report XGB Baseline trained by upsampled train datasets.PNG)
+![Classification report XGB Baseline trained by upsampled train datasets](/image/Classification_report_XGB_Baseline_trained_by_upsampled_train_datasets.PNG)
 
 
 **Classification report turned XGB model without upsampled train data**
