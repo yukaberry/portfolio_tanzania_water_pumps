@@ -255,19 +255,18 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 
 
-
-### Turned XGB model without upsampled train data
-
-![Classification_report_Turned_XGB_model_without_upsampled_traindata](/image/Classification_report_Turned_XGB_model_without_upsampled_traindata.PNG)
-
-
-
-
-
-
 ### Turned XGB model trained by upsampled data
 
 ![Classification_report_Turned_XGB_model_with_upsampled_traindata](/image/Classification_report_Turned_XGB_model_with_upsampled_traindata.PNG)
+
+
+
+
+
+
+### Turned XGB model without upsampled train data
+
+![Classification_report_Turned_XGB_model_with_upsampled_traindata](/image/Classification_report_Turned_XGB_model_without_upsampled_traindata.PNG)
 
 
 
