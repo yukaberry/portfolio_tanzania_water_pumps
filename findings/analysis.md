@@ -230,7 +230,7 @@ I have tried two different evaluation methods. Here it shows that the results ar
 
 
 **Upsampled Datasets, holdout method (8:2) validation**
-* SVC model's F1_macro has improved by 6 % and also keep the good accuracy. However, resampled technique is not so effective in other models.
+* SVC model's F1_macro has improved by 6 % and also keep the good accuracy. However, resampled technique is **not effective** in other models.
 
 ![baseline_model_scores_resampled](/image/baseline_model_scores_resampled.PNG)
 
@@ -240,14 +240,14 @@ I have tried two different evaluation methods. Here it shows that the results ar
 I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. Here it shows the details of XGB performance and it is turned by grid search. 
 
 
-### Classification report XGB Baseline without upsampled train data**
+### XGB Baseline without upsampled data
 
 ![classification report baseline xgb without upsampling](/image/classification_report_xgb.PNG)
 
 
 
 
-### Classification report XGB Baseline trained by upsampled train datasets**
+### XGB Baseline trained by upsampled train datasets
 
 ![Classification report XGB Baseline trained by upsampled train datasets](/image/Classification_report_XGB_Baseline_trained_by_upsampled_train_datasets.PNG)
 
@@ -256,18 +256,18 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 
 
-### Classification report turned XGB model without upsampled train data**
+### Turned XGB model without upsampled train data
 
-![Classification report Turned XGB model with upsampled train data](/image/)
-
-
+![Classification_report_Turned_XGB_model_without_upsampled_traindata](/image/Classification_report_Turned_XGB_model_without_upsampled_traindata.PNG)
 
 
 
 
-### Classification report Turned XGB model trained by upsampled data**
 
-![Classification report Turned XGB model with upsampled train data](/image/)
+
+### Turned XGB model trained by upsampled data
+
+![Classification_report_Turned_XGB_model_with_upsampled_traindata](/image/Classification_report_Turned_XGB_model_with_upsampled_traindata.PNG)
 
 
 
