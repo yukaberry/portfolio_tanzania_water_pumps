@@ -240,26 +240,37 @@ I have tried two different evaluation methods. Here it shows that the results ar
 I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. Here it shows the details of XGB performance and it is turned by grid search. 
 
 
-**Classification report XGB Baseline without upsampled train data**
+### Classification report XGB Baseline without upsampled train data**
 
 ![classification report baseline xgb without upsampling](/image/classification_report_xgb.PNG)
 
 
 
-**Classification report XGB Baseline trained by upsampled train datasets**
+
+### Classification report XGB Baseline trained by upsampled train datasets**
 
 ![Classification report XGB Baseline trained by upsampled train datasets](/image/Classification_report_XGB_Baseline_trained_by_upsampled_train_datasets.PNG)
 
 
-**Classification report turned XGB model without upsampled train data**
+
+
+
+
+### Classification report turned XGB model without upsampled train data**
 
 ![Classification report Turned XGB model with upsampled train data](/image/)
 
 
 
-**Classification report Turned XGB model trained by upsampled data**
+
+
+
+### Classification report Turned XGB model trained by upsampled data**
 
 ![Classification report Turned XGB model with upsampled train data](/image/)
+
+
+
 
 
 
