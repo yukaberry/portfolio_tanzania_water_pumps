@@ -11,7 +11,7 @@ The objective of this project: To pridect which water pumps are functional, whic
 6. Modeling and evaluation
 7. Challenges and augmentations
 
-## See interactive map [https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
+## See interactive map on nbviewer [https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
 
 ![foliummap](image/foliummap.png)
 ![foliummap2](image/foliummap2.png)
@@ -19,7 +19,7 @@ The objective of this project: To pridect which water pumps are functional, whic
 
 
 DrivenData works on projects at the intersection of data science and social impact, in areas like international development, health, education, research and conservation, and public services. 
-In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294**. **My private score is 0.87.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
+In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294**. **My private score is 0.88.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
 ![competition](image/competition.png)
 
 
