@@ -16,8 +16,8 @@ from utils.feature_engneering_utils import pay_cl
 
 
 # read csv
-df = pd.read_csv("data/Training_set_values.csv")
-label = pd.read_csv("data/training_set_labels.csv")
+df = pd.read_csv("data/competition/Training_set_values.csv")
+label = pd.read_csv("data/competition/training_set_labels.csv")
 
 # merge two datasets
 df = pd.merge(df,label, on = "id")
@@ -78,7 +78,7 @@ Scaling(df,columns_list)
 to_drop = ["funder","installer","payment","payment_type","wpt_name","recorded_by","num_private","extraction_type",
            "extraction_type_group","scheme_management","scheme_name","management",
           "quality_group","quantity_group","source","public_meeting","lga","ward",
-           "subvillage","region_code","district_code","date_recorded","id",'status_group'
+           "subvillage","region_code","district_code","date_recorded","id",'label',
            ,"waterpoint_type_group","permit","construction_year","amount_tsh"]
 df.drop(to_drop,inplace= True,axis =1)
 
@@ -127,17 +127,18 @@ df = df[['gps_height','longitude','latitude','population','basin_Internal',
  'funder_group_dwe', 'funder_group_gov', 'funder_group_hesewa',
  'funder_group_kkkt', 'funder_group_others', 'funder_group_rwe',
  'funder_group_tcrs', 'funder_group_unknown', 'population_zero_0',
- 'population_zero_1','label']]
+ 'population_zero_1',"status_group"]]
+
+# rename columns name with underscore("_") when they contain space(" ")
+df.columns = [c.replace(' ', '_') for c in df.columns]
+
 
 # Feature selection 
 X = df.iloc[0:59400,0:110]
-y= df.iloc[0:59400,-1]
+y= df[['status_group']]
 
-df.to_csv("data/tanzania_cleaned_df.csv",encoding='utf8',index=False)
-df = pd.read_csv("data/tanzania_cleaned_df.csv")
-
-# MOMO
-# do something with missing data ( gps, popluration, water amount)
+df.to_csv("data/tanzania_cleaned_df2.csv",encoding='utf8',index=False)
+df = pd.read_csv("data/tanzania_cleaned_df2.csv")
 
 
 
