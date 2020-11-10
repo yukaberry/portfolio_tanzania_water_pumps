@@ -171,17 +171,17 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 
 ![pump_type](/image/water_source.PNG)
 
-## Correlation : Labels and features  
+## Correlation : Features and each labels 
 
-**correlation with status_group_functional**
+**Feature correlation with "status_group_functional" class**
 ![corr_func](/image/corr_with_func.PNG)
 
-**correlation wihth status_group_functional_needs_repair**
+**Feature correlation with "status_group_functional_needs_repair" class**
 
 ![corr_nonfunc](/image/corr_with_nonfunc.PNG)
 
 
-**correlation wiht status_group_non_functional**
+**Feature correlation with "status_group_non_functional" class**
 
 ![corr_repair](/image/corr_with_repair.PNG)
 
@@ -203,8 +203,8 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 # 5. Feature engneering
 
 **New features**
-* population_zero :Categorised : population is  zero or not zero
-* payment_status : Categorised : payment status is paid, not paid or unknown
+* population_zero : Categorised : population is  zero or not zero
+* payment_status :  Categorised : payment status is paid, not paid or unknown
 * construction_year_new : Sort years by decades
 * installer_group : Keep top 10 of installer
 * funder_group :  Keep top 10 of funder
@@ -217,7 +217,7 @@ After resampling, the dataset looks as below. Resampling techniques are applied 
 
 # 6. Modeling and Evaluation
 
-## 6.1 Comparason of 4 Baseline Models's evaluation 
+## 6.1 Comparason of 4 Baseline Models' evaluation 
 I have tried two different evaluation methods. Here it shows that the results are similar, I suppose it is becuase of the data size. 
 
 **Datasets (without upsampling), holdout method (8:2) validation**
@@ -288,7 +288,7 @@ I have decided to use XGB and optimise its hyperparameters because I would like 
 
 
 
-## 6.4 AUC(area under curve) and ROC(receiver operating curve)chart 
+## 6.4 AUC(Area Under Curve) and ROC(Receiver Operating Curve) chart 
 All of 3 classes has more than 95% auc rates. This model’s predictive ability in discriminating between classes is good.
 
 
@@ -297,7 +297,7 @@ All of 3 classes has more than 95% auc rates. This model’s predictive ability 
 ![roc_auc_chartxgb](/image/auc_roc_chart_xgb.PNG)
 
 
-## 6.5 Summary of XGB model's evaluation
+## 6.5 The summary of XGB model's evaluation
 
 Overall, as you see above evaluation results of XGB model, it is reliable and stable to predict pumps categories.F1 has improved by 2% after resampling dataset and tuning a model.
 However, it shows that there is still some room to be improved especially in "Nedd repair"'s recall score. This class is only about 7 % of the whole dataset, which made the model difficult to learn even after upsampling.

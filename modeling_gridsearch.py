@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from resampling import X_train_resampled, y_train_resampled
+#from resampling import X_train_resampled, y_train_resampled
 # from resampling import X_test, y_test 
 # from resampling import  X,y
 from xgboost import XGBClassifier

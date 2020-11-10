@@ -27,7 +27,7 @@ In this competition, **5600 competitors** joined and the best public score (30 O
 
 # Motivation
 
-Interested in processing **geospatial data** and taking my understandings to a next level to deepen data science knowledge and skills. This problem has both categorical and numeric features, and multi-labels. This project spotlights **data visualisaiton** as well as **preprocessing and modeling**. 
+Interested in processing **geospatial data** and taking my understandings to a next level to deepen data science knowledge and skills. This problem has both categorical and numeric features, and multi-labels. This project spotlights **data visualisaiton** as well as **preprocessing and XGBoost modeling**. 
 
 
 # Files' and folders' descriptions
@@ -40,7 +40,7 @@ Interested in processing **geospatial data** and taking my understandings to a n
   - [cleaning_data_utils.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/utils/cleaning_data_utils.py) 
   - [feature_engneering_utils.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/utils/feature_engneering_utils.py)
   - [resampling_utils.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/utils/resampling_utils.py)
-  - [modeling.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/utils/modeling_utils.py)
+  - [modeling_utils.py](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/utils/modeling_utils.py)
 * [requirements.txt](https://github.com/yukaberry/portfolio_tanzania_water_pumps/blob/master/requirements.txt) Software Requirements
 
 * [folium_map_layercontrol.ipynb](https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb) **Interactive water pumps' maps of Tanzania** in python notebook by using folium and geospatial data.
