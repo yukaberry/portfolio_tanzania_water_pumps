@@ -238,7 +238,7 @@ I have tried two different evaluation methods. Here it shows that the results ar
 
 
 ## 6.2  Classification report
-I have decided to use XGB and optimise its hyperparameters because I would like to get to know this model. Here it shows the details of XGB performance and it is turned by grid search. 
+I have decided to use XGBoost and optimise its hyperparameters because I would like to get to know this model. Here it shows the details of XGB performance and it is turned by grid search. 
 
 
 ### XGB Baseline trained by non upsampled data
