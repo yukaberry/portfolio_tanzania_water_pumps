@@ -8,7 +8,8 @@
 4. Exploring and cleaning data
 5. Feature engneering
 6. Modeling and evaluation
-7. Challenges and augmentations
+7. The competition and final scores
+8. Challenges and augmentations
 
 
 
@@ -303,7 +304,7 @@ Overall, as you see above evaluation results of XGB model, it is reliable and st
 However, it shows that there is still some room to be improved especially in "Nedd repair"'s recall score. This class is only about 7 % of the whole dataset, which made the model difficult to learn even after upsampling.
 
 
-## 6.6 The competition and scores
+# 7. The competition and final scores
 
 DrivenData works on projects at the intersection of data science and social impact, in areas like international development, health, education, research and conservation, and public services. 
 In this competition, **5600 competitors** joined and the best public score (30 Oct 2020) is **0.8294.My private score of accuracy is 0.88.** [the website of the competion](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)

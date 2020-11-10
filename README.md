@@ -9,7 +9,8 @@ The objective of this project: To pridect which water pumps are functional, whic
 4. Exploring and cleaning data
 5. Feature engneering
 6. Modeling and evaluation
-7. Challenges and augmentations
+7. The competition and final scores
+8. Challenges and augmentations
 
 ## See interactive map on nbviewer [https://nbviewer.jupyter.org/github/yukaberry/portfolio_tanzania_water_pumps/blob/master/folium_map_layercontrol.ipynb]
 
