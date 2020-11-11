@@ -3,7 +3,7 @@
 
 
 .vscode
-*.sav
+#*.sav    #for picked model
 # *.csv
 *.xlsx
 #*.ipynb
